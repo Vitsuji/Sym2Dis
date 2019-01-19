@@ -1,28 +1,33 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="banner">
+      <h1>Disease & Symtoms</h1>
+    </div>
+    <router-view/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
-}
+ export default {
+   name: 'App',
+ };
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+ * {
+   margin: 0;
+   padding: 0;
+ }
+ body {
+   background: #569099;
+ }
+ .banner {
+   width: 100%;
+   background: #93c572;
+ }
+ .banner h1 {
+   padding: 25px;
+    color: #fff;
+    text-decoration: underline;
+  }
 </style>
